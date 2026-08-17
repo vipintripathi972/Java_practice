@@ -21,4 +21,4 @@ class Overridinng
         int r = obj.add(2,5);
         System.out.println(r);
     }
-}
+} 

@@ -13,7 +13,7 @@ class Comp
     }
 }
 
-class RunT
+class RunT extends Comp
 {
     public int add(int n1, int n2)
     {
@@ -28,15 +28,14 @@ class Polymorphism
 {
     public static void main(String args[])
     {
-        Comp obj1 = new Comp();
-        RunT obj2 = new RunT();
-        int n2 = obj1.add(3,3,4);
+        RunT obj = new RunT();
+        int n2 = obj.add(3,3,4);
         System.out.println(n2 + "\n");
 
-        int n1 = obj1.add(3,4);
+        int n1 = obj.add(3,4);
         System.out.println(n1 + "\n");
 
-        int n3 = obj2.add(5,9);
+        int n3 = obj.add(5,9);
         System.out.println(n3 + "\n");
         
     }
